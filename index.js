@@ -12,14 +12,14 @@ const app = express();
 app.use(express.json());
 
 // import and use routes for the three collections
-// import userRoutes from './routes/userRoutes.js';
-// import recipeRoutes from './routes/recipeRoutes.js';
-// import equipmentRoutes from './routes/equipmentRoutes.js';
+import userRoutes from './routes/userRoutes.js';
+import recipeRoutes from './routes/recipeRoutes.js';
+import equipmentRoutes from './routes/equipmentRoutes.js';
 
 //  routes to specific base paths
-// app.use('/api/users', userRoutes);
-// app.use('/api/recipes', recipeRoutes);
-// app.use('/api/equipment', equipmentRoutes);
+app.use('/api/users', userRoutes);
+app.use('/api/recipes', recipeRoutes);
+app.use('/api/equipment', equipmentRoutes);
 
 
 //server root route

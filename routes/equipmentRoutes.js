@@ -1,5 +1,5 @@
 import express from 'express'
-
+import * as equipmentController from '../controllers/equipmentController.js'
 const router = express.Router();
 
 router.route('/')
