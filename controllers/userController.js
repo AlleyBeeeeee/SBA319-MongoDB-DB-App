@@ -23,16 +23,18 @@ export const getUserById = async (req, res) => {
     }
 };
 
-//create user
+//     CREATE a new user
+//    POST /api/users
 export const createUser = async (req, res) => {
     try {
         const user = new User(req.body);
         const savedUser = await user.save();
-        res.status(201).json({message: 'Failed to create user', error: error.message})
-    }catch (error) {
+        res.status(201).json(savedUser);
+    } catch (error) { 
         res.status(400).json({ message: 'Failed to create user', error: error.message });
+       
     }
-}
+};
 
 //delete user 
 export const deleteUser = async (req, res) => {

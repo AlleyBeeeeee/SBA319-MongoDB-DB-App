@@ -39,7 +39,7 @@ const recipeSchema = new mongoose.Schema({
         {
             type: mongoose.Schema.Types.ObjectId,
             ref: 'Equipment',
-            required: true,
+            required: false,
         },
     ],
     steps: {
