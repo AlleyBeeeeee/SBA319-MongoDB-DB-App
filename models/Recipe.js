@@ -11,7 +11,7 @@ const recipeSchema = new mongoose.Schema({
         type: String,
         required: true,
         unique: true,
-        trim: transpileModule,
+        trim: true,
     },
     description: { type: String, required: true},
 

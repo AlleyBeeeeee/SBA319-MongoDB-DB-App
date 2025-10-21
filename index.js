@@ -2,7 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 dotenv.config();
 import mongoose from 'mongoose';
-// import connectDB from './config/db.js'
+import connectDB from './config/db.js'
 
 const connectionString = process.env.ATLAS_URI;
 await mongoose.connect(connectionString);

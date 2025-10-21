@@ -7,7 +7,7 @@ router.route('/')
     .post(equipmentController.createEquipment);
 
 
-router.route(':/id')
+router.route('/:id')
 .get(equipmentController.getEquipmentById)
 .patch(equipmentController.getEquipmentById)
 .delete(equipmentController.deleteEquipment);
